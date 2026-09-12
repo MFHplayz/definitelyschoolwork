@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>School Work</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="School Work home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>School Work</span>
+        <small class="early-access">(early access)</small>
+      </a>
+      <div class="topbar-actions">
+        <span class="status-pill"><span class="status-dot"></span> Offline</span>
+        <button class="icon-button" id="sound-toggle" type="button" aria-label="Toggle sound" aria-pressed="false">♪</button>
+      </div>
+    </header>
+
+    <section class="games-section" id="games">
+      <div class="game-grid">
+        <button class="game-card card-coral" data-game="snake" type="button">
+          <span class="card-index">01</span>
+          <span class="game-illustration snake-art" aria-hidden="true"><i></i><i></i><i></i><b>●</b></span>
+          <span class="game-card-content"><strong>Snake</strong><small>Classic</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-lime" data-game="merge" type="button">
+          <span class="card-index">02</span>
+          <span class="game-illustration merge-art" aria-hidden="true"><i>2</i><i>4</i><i>8</i></span>
+          <span class="game-card-content"><strong>2048</strong><small>Merge tiles</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-blue" data-game="tictactoe" type="button">
+          <span class="card-index">03</span>
+          <span class="game-illustration tic-art" aria-hidden="true"><i>×</i><i>○</i><i>×</i></span>
+          <span class="game-card-content"><strong>Tic-Tac-Toe</strong><small>Two players</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-slate" data-game="connectfour" type="button">
+          <span class="card-index">04</span>
+          <span class="game-illustration connect-art" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></span>
+          <span class="game-card-content"><strong>Connect Four</strong><small>Drop four in a row</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-darts" data-game="darts" type="button">
+          <span class="card-index">05</span>
+          <span class="game-illustration darts-art" aria-hidden="true"><i></i><b>✦</b></span>
+          <span class="game-card-content"><strong>Darts</strong><small>Tap on target</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-reaction" data-game="reaction" type="button">
+          <span class="card-index">06</span>
+          <span class="game-illustration reaction-art" aria-hidden="true">!</span>
+          <span class="game-card-content"><strong>Reaction</strong><small>Tap when ready</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-memory" data-game="memory" type="button">
+          <span class="card-index">07</span>
+          <span class="game-illustration memory-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="game-card-content"><strong>Memory</strong><small>Match the pairs</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-block" data-game="blockblast" type="button">
+          <span class="card-index">08</span>
+          <span class="game-illustration block-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="game-card-content"><strong>Block Blast</strong><small>Place and clear</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="game-card card-mine" data-game="minesweeper" type="button">
+          <span class="card-index">09</span>
+          <span class="game-illustration mine-art" aria-hidden="true">*</span>
+          <span class="game-card-content"><strong>Minesweeper</strong><small>Clear the field</small></span>
+          <span class="play-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <section class="request-panel" aria-labelledby="request-title">
+        <div>
+          <p class="eyebrow">Have a title in mind?</p>
+          <h2 id="request-title">Request one</h2>
+          <p class="request-note">Send a suggestion for the next addition.</p>
+        </div>
+        <a class="request-link" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__VuXYmhUMTdESDVCTEwyTDA2OVBYVDBZQUZQNjM4Ri4u" target="_blank" rel="noopener">Open request form <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="bug-panel" aria-labelledby="bug-title">
+        <div>
+          <p class="eyebrow">Something not working?</p>
+          <h2 id="bug-title">Report a bug</h2>
+        </div>
+        <a class="request-link" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__VuXYmhUM0xXNUc3V0dNTUoyS1I3TTdUQVU1ME9SVC4u" target="_blank" rel="noopener">Open bug report <span aria-hidden="true">↗</span></a>
+      </section>
+    </section>
+
+  </main>
+
+  <div class="game-overlay" id="game-overlay" hidden>
+    <section class="game-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-topbar">
+        <button class="back-button" id="close-game" type="button"><span aria-hidden="true">←</span> Back</button>
+        <span class="modal-label" id="modal-label">Playing</span>
+        <button class="icon-button light" id="restart-game" type="button" aria-label="Restart">↻</button>
+      </div>
+      <div class="game-heading"><div><p class="eyebrow" id="modal-eyebrow">01</p><h2 id="modal-title">Snake</h2></div><div class="score-stack"><span>BEST</span><strong id="best-score">0</strong></div></div>
+      <div class="game-stage" id="game-stage"></div>
+      <p class="game-message" id="game-message" aria-live="polite"></p>
+    </section>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
